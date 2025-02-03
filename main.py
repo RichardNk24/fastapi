@@ -8,7 +8,7 @@ app = FastAPI()
 
 db: List[User] = [
     User(id=uuid4(), first_name="Luana", last_name="Channing", gender=Gender.female, roles=[Role.student]),
-    User(id=uuid4(), first_name="Alex", last_name="Jones", gender=Gender.male, roles=[Role.admin] )
+    User(id=uuid4(), first_name="Alex", last_name="Jones", gender=Gender.male, roles=[Role.admin, Role.user])
 
 ]
 @app.get('/')

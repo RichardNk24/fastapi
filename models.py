@@ -11,6 +11,7 @@ class Gender(str, Enum):
 class Role(str, Enum):
     admin = "admin"
     user = "user"
+    student = "student"
     
 class User(BaseModel):
     id: Optional[UUID] = uuid4()

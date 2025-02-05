@@ -11,6 +11,8 @@ db: List[User] = [
     User(id=uuid4(), first_name="Alex", last_name="Jones", gender=Gender.male, roles=[Role.admin, Role.user])
 
 ]
+
+# First route
 @app.get('/')
 async def root():
     return {"Hello": "Rich World"}
